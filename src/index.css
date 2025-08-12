@@ -32,7 +32,7 @@
 
     --color-bg-brand-primary: var(--color-indigo-700);
     --color-bg-brand-primary-emphasize: var(--color-indigo-800);
-    --color-brand-subtle: var(--color-indigo-50);
+    --color-bg-brand-subtle: var(--color-indigo-50);
 
     --color-bg-disabled: var(--color-neutral-100);
     --color-bg-disabled-emphasize: var(--color-gray-100);
@@ -81,7 +81,7 @@
 @layer components {
     .page {
         --max-width-content: 100%;
-        --content-padding-side: 1rem;
+        --content-padding-side: 0.75rem;
 
         @media (min-width: 768px) {
             & {

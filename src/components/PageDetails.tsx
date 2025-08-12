@@ -2,7 +2,7 @@ import HeroSection from './HeroSection';
 
 function PageDetails() {
     return (
-        <main className="grid items-center">
+        <main className="bg-bg-primary mt-4 grid items-center rounded-md py-12">
             <HeroSection />
         </main>
     );

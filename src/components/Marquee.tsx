@@ -1,7 +1,14 @@
-import data from '../data/data.json';
+import { useContext } from 'react';
+import { PageContext } from '../context/PageContext';
 
 function Marquee() {
-    const items = data['teamsLogoSrc'].map((srcObj, index) => (
+    const context = useContext(PageContext);
+
+    if (!context) throw new Error('Context for Marquee is null!');
+
+    const { teamsLogoSrc } = context;
+
+    const items = teamsLogoSrc.map((srcObj, index) => (
         <img
             key={`logo-${index}`}
             src={srcObj.src}

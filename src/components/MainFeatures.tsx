@@ -1,8 +1,15 @@
-import data from '../data/data.json';
+import { useContext } from 'react';
+import { PageContext } from '../context/PageContext';
 
 function MainFeatures() {
-    const items = data['mainFeatures'].map((feature, index) => (
-        <div className="text-center" key={index}>
+    const context = useContext(PageContext);
+
+    if (!context) throw new Error('Context for MainFeatures is null!');
+
+    const { mainFeatures } = context;
+
+    const items = mainFeatures.map((feature, index) => (
+        <div className="py-7.5 text-center transition-transform" key={index}>
             <img
                 className="feature-icon mx-auto mb-5"
                 src={feature.iconSvgSrc}
@@ -28,7 +35,7 @@ function MainFeatures() {
                     excellence.
                 </p>
             </div>
-            <div className="grid gap-y-7.5">{items}</div>
+            <div className="grid">{items}</div>
         </section>
     );
 }

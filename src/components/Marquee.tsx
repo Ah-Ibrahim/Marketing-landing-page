@@ -18,7 +18,7 @@ function Marquee() {
 
             <div className="marquee animate-marquee flex w-[max-content] gap-(--marquee-spacing) ps-(--marquee-spacing) hover:[animation-play-state:paused]">
                 {items}
-                {items}
+                {items} {/* Items duplicated for animation */}
             </div>
         </section>
     );

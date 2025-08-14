@@ -4,7 +4,7 @@ function HeroSection() {
     return (
         <section className="grid max-w-(--max-width-content) gap-12 bg-transparent px-(--content-padding-side) lg:grid-cols-12">
             <div className="lg:col-span-6">
-                <h1 className="mb-4 text-4xl font-semibold tracking-wide">
+                <h1 className="mb-4 text-4xl font-semibold">
                     Well crafted abstract gradient
                 </h1>
                 <p className="text-primary mb-8 text-xl">

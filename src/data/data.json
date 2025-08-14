@@ -21,5 +21,43 @@
         {
             "src": "./team-logos/logoipsum-7.svg"
         }
+    ],
+    "mainFeatures": [
+        {
+            "iconSvgSrc": "./features-icons/download-2-line.svg",
+            "iconAlt": "Download icon",
+            "title": "Infinite Download",
+            "description": "Once you subscribe to our plans, they're all yours. Download as many as you want and use them for work presentations, wallpapers, and much more."
+        },
+        {
+            "iconSvgSrc": "./features-icons/brush-line.svg",
+            "iconAlt": "Brush icon",
+            "title": "Purely Handcrafted",
+            "description": "No AI, no generic images. Crafted from various chemicals, fabric, clouds, or even particles as small as dust."
+        },
+        {
+            "iconSvgSrc": "./features-icons/copyright-line.svg",
+            "iconAlt": "Copyright icon",
+            "title": "All Are Under Licensed",
+            "description": "The Only limitation with these abstract images is that you are not able to sell them in any form, whether digital or hard copy (such as paintings or prints on paper)."
+        },
+        {
+            "iconSvgSrc": "./features-icons/money-dollar-circle-line.svg",
+            "iconAlt": "Money icon",
+            "title": "Cancel Anytime",
+            "description": "Subscribe at your own pace, and cancel when you feel it's enough."
+        },
+        {
+            "iconSvgSrc": "./features-icons/team-line.svg",
+            "iconAlt": "Team icon",
+            "title": "Empowering For Team",
+            "description": "We support multiple seats at once, requiring only a single payment."
+        },
+        {
+            "iconSvgSrc": "./features-icons/refresh-line.svg",
+            "iconAlt": "Refresh icon",
+            "title": "No Limitations",
+            "description": "Use as many as you want, from Dribbble presentations to PowerPoint presentations."
+        }
     ]
 }

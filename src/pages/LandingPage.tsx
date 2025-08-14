@@ -1,6 +1,7 @@
 import NavBar from '../components/NavBar';
 import PageDetails from '../components/PageDetails';
 import HeroSection from '../components/HeroSection';
+import Marquee from '../components/Marquee';
 
 function LandingPage() {
     return (
@@ -8,6 +9,7 @@ function LandingPage() {
             <NavBar />
             <PageDetails>
                 <HeroSection />
+                <Marquee />
             </PageDetails>
         </div>
     );

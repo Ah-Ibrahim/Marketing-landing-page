@@ -4,7 +4,11 @@
     /* Overriding theme variables */
     --tw-duration: 0.35s;
 
+    /* Extending theme variables  */
+    /* Animations */
+    --animate-marquee: marqueeAnimation 10s linear infinite;
 
+    /* Colors */
     /* Text */
     --color-primary: var(--color-neutral-600);
     --color-primary-hover: var(--color-neutral-950);
@@ -81,7 +85,7 @@
 @layer components {
     .page {
         --max-width-content: 100%;
-        --content-padding-side: 0.75rem;
+        --content-padding-side: 1rem;
 
         @media (min-width: 768px) {
             & {
@@ -95,8 +99,6 @@
             }
         }
     }
-
-
 
     .btn {
         --btn-background-color: #fff;
@@ -126,5 +128,39 @@
 
     .icon-menu {
         width: 20px;
+    }
+
+    /* .inside-shadow::after, .inside-shadow::before {
+        --direction: to right;
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 20px;
+        z-index: 1;
+        background-image: linear-gradient(var(--direction), rgba(131, 131, 131, 0.195), rgba(0, 0, 0, 0));
+    }
+
+    .inside-shadow::before {
+        left: 0;
+    }
+
+    .inside-shadow::after {
+        --direction: to left;
+        right: 0;
+    } */
+
+    .marquee {
+        --marquee-spacing: 5rem;
+    }
+
+    @keyframes marqueeAnimation {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
     }
 }

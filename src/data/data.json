@@ -1,0 +1,25 @@
+{
+    "teamsLogoSrc": [
+        {
+            "src": "./team-logos/logoipsum-1.svg"
+        },
+        {
+            "src": "./team-logos/logoipsum-2.svg"
+        },
+        {
+            "src": "./team-logos/logoipsum-3.svg"
+        },
+        {
+            "src": "./team-logos/logoipsum-4.svg"
+        },
+        {
+            "src": "./team-logos/logoipsum-5.svg"
+        },
+        {
+            "src": "./team-logos/logoipsum-6.svg"
+        },
+        {
+            "src": "./team-logos/logoipsum-7.svg"
+        }
+    ]
+}

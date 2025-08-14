@@ -8,7 +8,7 @@ function SideMenu({ onClose }: SideMenuProps) {
     const toggleDuration: number = 1;
 
     return (
-        <div className="fixed inset-0 bg-black/25" onClick={onClose}>
+        <div className="fixed inset-0 z-[1] bg-black/25" onClick={onClose}>
             <motion.div
                 className="bg-bg-primary absolute top-0 right-0 bottom-0 flex w-3/4 flex-col p-6 pr-[calc(5%+calc(var(--spacing)*6))]"
                 onClick={(e) => e.stopPropagation()}

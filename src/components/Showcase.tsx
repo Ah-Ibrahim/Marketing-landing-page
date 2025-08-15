@@ -1,7 +1,7 @@
-import { type ShowcaseType } from '../context/PageContext';
+import type { ShowcaseType } from '../types/PageTypes';
 
 interface ShowcaseProps extends ShowcaseType {
-    isReversed?: boolean;
+    isLayoutReversed?: boolean;
 }
 
 function Showcase({
@@ -11,7 +11,7 @@ function Showcase({
     imgSrc,
     imgAlt,
     features,
-    isReversed = false,
+    isLayoutReversed: isLayoutReversed = false,
 }: ShowcaseProps) {
     const items = features.map((feature, index) => (
         <div className="flex flex-row items-start gap-x-4" key={index}>
@@ -37,7 +37,7 @@ function Showcase({
                 <p className="text-primary text-lg">{mainDescription}</p>
             </div>
             <div
-                className={`flex ${isReversed ? 'flex-col-reverse' : 'flex-col'} gap-y-11`}
+                className={`flex ${isLayoutReversed ? 'flex-col-reverse' : 'flex-col'} gap-y-11`}
             >
                 <div className="grid gap-9">{items}</div>
                 <div className="aspect-[5/3] w-full rounded-lg">

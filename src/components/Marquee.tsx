@@ -1,13 +1,10 @@
-import { useContext } from 'react';
-import { PageContext } from '../context/PageContext';
+import type { srcArr } from '../types/PageTypes';
 
-function Marquee() {
-    const context = useContext(PageContext);
+interface MarqueeProps {
+    teamsLogoSrc: srcArr;
+}
 
-    if (!context) throw new Error('Context for Marquee is null!');
-
-    const { teamsLogoSrc } = context;
-
+function Marquee({ teamsLogoSrc }: MarqueeProps) {
     const items = teamsLogoSrc.map((srcObj, index) => (
         <img
             key={`logo-${index}`}

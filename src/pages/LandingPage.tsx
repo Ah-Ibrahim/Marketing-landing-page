@@ -5,6 +5,7 @@ import Marquee from '../components/Marquee';
 import MainFeatures from '../components/MainFeatures';
 import data from '../data/data.json';
 import { PageContext } from '../context/PageContext';
+import Showcase from '../components/Showcase';
 
 function LandingPage() {
     return (
@@ -15,6 +16,8 @@ function LandingPage() {
                     <HeroSection />
                     <Marquee />
                     <MainFeatures />
+                    <Showcase {...data.designShowcase} />
+                    <Showcase {...data.supportShowcase} isReversed={true} />
                 </PageContext>
             </PageDetails>
         </div>

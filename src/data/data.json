@@ -59,5 +59,59 @@
             "title": "No Limitations",
             "description": "Use as many as you want, from Dribbble presentations to PowerPoint presentations."
         }
-    ]
+    ],
+    "designShowcase": {
+        "opener": "High quality images",
+        "mainTitle": "For designers, by designers",
+        "mainDescription": "Unleash boundless creativity with a large repository of images optimized for designers.",
+        "imgSrc": "./images/showcase-1.jpg",
+        "imgAlt": "Showcase image 1",
+        "features": [
+            {
+                "iconSvgSrc": "./features-icons/hd-line.svg",
+                "iconAlt": "HD icon",
+                "title": "5k resolution support",
+                "description": "All images boast a minimum resolution of 5k, ensuring crisp, crystal-clear quality."
+            },
+            {
+                "iconSvgSrc": "./features-icons/drop-line.svg",
+                "iconAlt": "Water icon",
+                "title": "From water to glass",
+                "description": "We offer a wide array of abstractions, ranging from water to glass, and encompassing various styles including 3D and vector."
+            },
+            {
+                "iconSvgSrc": "./features-icons/rainbow-line.svg",
+                "iconAlt": "Rainbow icon",
+                "title": "Portrait or landscape",
+                "description": "Effortlessly adapt your images for any platform - whether it's a stunning wallpaper or captivating instagram reels and stories."
+            }
+        ]
+    },
+    "supportShowcase": {
+        "opener": "Best-in-class support",
+        "mainTitle": "Convenience and licensing that empowers",
+        "mainDescription": "In a world where storytelling constantly evolves, don't let licensing and poor support hold you down.",
+        "imgSrc": "./images/showcase-2.jpg",
+        "imgAlt": "Showcase image 1",
+        "features": [
+            {
+                "iconSvgSrc": "./features-icons/rocket-2-line.svg",
+                "iconAlt": "Rocket icon",
+                "title": "Faster downloads",
+                "description": "Our robust servers are primed to deliver the highest resolution images swiftly, ensuring a smooth download experience."
+            },
+            {
+                "iconSvgSrc": "./features-icons/drop-line.svg",
+                "iconAlt": "Team icon",
+                "title": "Convenience for teams",
+                "description": "Your single account can accommodate multiple users simultaneously downloading without nay disruptions, streamlining teamwork and productivity."
+            },
+            {
+                "iconSvgSrc": "./features-icons/rainbow-line.svg",
+                "iconAlt": "Copyright icon",
+                "title": "Royalty-free licensing",
+                "description": "Our straightforward, royalty-free licensing means our chosen images are yours to innovate without the hassle of negotiating usage rights for every new project."
+            }
+        ]
+    }
 }

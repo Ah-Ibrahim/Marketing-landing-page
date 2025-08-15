@@ -9,7 +9,7 @@ function MainFeatures() {
     const { mainFeatures } = context;
 
     const items = mainFeatures.map((feature, index) => (
-        <div className="py-7.5 text-center transition-transform" key={index}>
+        <div className="py-3.75 text-center" key={index}>
             <img
                 className="feature-icon mx-auto mb-5"
                 src={feature.iconSvgSrc}
@@ -22,7 +22,7 @@ function MainFeatures() {
 
     return (
         <section className="my-6.5 max-w-(--max-width-content) px-(--content-padding-side)">
-            <div className="mb-11 text-center">
+            <div className="mb-6.5 text-center">
                 <div className="text-brand text-md mb-3 tracking-wide">
                     Premium abstract images
                 </div>

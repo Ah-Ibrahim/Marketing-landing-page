@@ -1,7 +1,7 @@
-import type { srcArr } from '../types/PageTypes';
+import type { IconSrcArray } from '../types/PageTypes';
 
 interface MarqueeProps {
-    teamsLogoSrc: srcArr;
+    teamsLogoSrc: IconSrcArray;
 }
 
 function Marquee({ teamsLogoSrc }: MarqueeProps) {

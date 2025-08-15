@@ -11,7 +11,7 @@ function Showcase({
     imgSrc,
     imgAlt,
     features,
-    isLayoutReversed: isLayoutReversed = false,
+    isLayoutReversed = false,
 }: ShowcaseProps) {
     const items = features.map((feature, index) => (
         <div className="flex flex-row items-start gap-x-4" key={index}>

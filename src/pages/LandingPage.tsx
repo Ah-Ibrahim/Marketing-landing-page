@@ -5,7 +5,7 @@ import Marquee from '../components/Marquee';
 import MainFeaturesShowcase from '../components/MainFeatures';
 import Showcase from '../components/Showcase';
 
-import { mapPageData } from '../mappers/mapPageData';
+import { mapLandingPageData } from '../mappers/mapLandingPageData';
 
 function LandingPage() {
     // TODO I need to add runtime validation system (like zod)
@@ -14,7 +14,7 @@ function LandingPage() {
         mainFeaturesShowcaseData,
         designShowcaseData,
         supportShowcaseData,
-    } = mapPageData();
+    } = mapLandingPageData();
 
     return (
         <div className="bg-bg-secondary page-layout p-4">

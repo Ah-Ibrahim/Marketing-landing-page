@@ -8,7 +8,6 @@ import Showcase from '../components/Showcase';
 import { mapLandingPageData } from '../mappers/mapLandingPageData';
 
 function LandingPage() {
-    // TODO I need to add runtime validation system (like zod)
     const {
         marqueeData,
         mainFeaturesShowcaseData,

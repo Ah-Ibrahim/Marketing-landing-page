@@ -1,8 +1,12 @@
 import LandingJSONData from '../data/data.json';
-import type { LandingPageJSONType } from '../types/PageTypes';
+import {
+    LandingPageJSONSchema,
+    type LandingPageJSONType,
+} from '../types/PageSchemas';
 
 export function mapLandingPageData() {
-    const data: LandingPageJSONType = LandingJSONData;
+    const data: LandingPageJSONType =
+        LandingPageJSONSchema.parse(LandingJSONData);
 
     return {
         marqueeData: data.teamsLogoSrc,

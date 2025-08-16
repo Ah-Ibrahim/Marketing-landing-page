@@ -1,7 +1,7 @@
-import useMediaQuery from '../hooks/useMediaQuery';
 import logoSrc from '../assets/images/abstractly.png';
-import { useState } from 'react';
 import SideMenu from './SideMenu';
+import { useState } from 'react';
+import useMediaQuery from '../hooks/useMediaQuery';
 import { AnimatePresence } from 'motion/react';
 
 function NavBar() {

@@ -1,4 +1,4 @@
-import type { ShowcaseType } from '../types/PageTypes';
+import type { ShowcaseType } from '../types/PageSchemas';
 
 interface ShowcaseProps extends ShowcaseType {
     isLayoutReversed?: boolean;

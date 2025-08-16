@@ -1,4 +1,4 @@
-import type { IconSrcArray } from '../types/PageTypes';
+import type { IconSrcArray } from '../types/PageSchemas';
 
 interface MarqueeProps {
     teamsLogoSrc: IconSrcArray;

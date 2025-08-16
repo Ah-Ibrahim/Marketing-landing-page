@@ -118,5 +118,118 @@
                 "description": "Our straightforward, royalty-free licensing means our chosen images are yours to innovate without the hassle of negotiating usage rights for every new project."
             }
         ]
+    },
+    "pricingSection": {
+        "opener": "Pricing Tiers",
+        "mainTitle": "Fit for all your needs",
+        "mainDescription": "Pick the plan that suits you today and step as your demands grow - our flexible options have your journey mapped out.",
+        "plans": [
+            {
+                "title": "Basic Plan",
+                "description": "Access to a curated selection of abstract images",
+                "pricing": {
+                    "monthly": 9.99,
+                    "annually": 99.9,
+                    "currency": "USD"
+                },
+                "features": [
+                    {
+                        "iconSvgSrc": "./features-icons/check-line.svg",
+                        "iconAlt": "Check icon",
+                        "description": "Standard quality images"
+                    },
+                    {
+                        "iconSvgSrc": "./features-icons/check-line.svg",
+                        "iconAlt": "Check icon",
+                        "description": "Limited to personal use"
+                    },
+                    {
+                        "iconSvgSrc": "./features-icons/check-line.svg",
+                        "iconAlt": "Check icon",
+                        "description": "Email support"
+                    }
+                ],
+                "isFeatured": false
+            },
+            {
+                "title": "Standard Plan",
+                "description": "Next-level Integrations, priced economically",
+                "pricing": {
+                    "monthly": 19.99,
+                    "annually": 199.9,
+                    "currency": "USD"
+                },
+                "features": [
+                    {
+                        "iconSvgSrc": "./features-icons/check-line.svg",
+                        "iconAlt": "Check icon",
+                        "description": "Expanded library with more diverse abstract images"
+                    },
+                    {
+                        "iconSvgSrc": "./features-icons/check-line.svg",
+                        "iconAlt": "Check icon",
+                        "description": "High-resolution images available"
+                    },
+                    {
+                        "iconSvgSrc": "./features-icons/check-line.svg",
+                        "iconAlt": "Check icon",
+                        "description": "Suitable for commercial use"
+                    },
+                    {
+                        "iconSvgSrc": "./features-icons/check-line.svg",
+                        "iconAlt": "Check icon",
+                        "description": "Priority email support"
+                    },
+                    {
+                        "iconSvgSrc": "./features-icons/check-line.svg",
+                        "iconAlt": "Check icon",
+                        "description": "Advanced analytics"
+                    }
+                ],
+                "isFeatured": true
+            },
+            {
+                "title": "Premium Plan",
+                "description": "Experience limitless living for power users",
+                "pricing": {
+                    "monthly": 29.99,
+                    "annually": 299.9,
+                    "currency": "USD"
+                },
+                "features": [
+                    {
+                        "iconSvgSrc": "./features-icons/check-line.svg",
+                        "iconAlt": "Check icon",
+                        "description": "Full access to the entire image library, including exclusive content"
+                    },
+                    {
+                        "iconSvgSrc": "./features-icons/check-line.svg",
+                        "iconAlt": "Check icon",
+                        "description": "Highest quality images, including premium collections"
+                    },
+                    {
+                        "iconSvgSrc": "./features-icons/check-line.svg",
+                        "iconAlt": "Check icon",
+                        "description": "Commercial and resale rights"
+                    },
+                    {
+                        "iconSvgSrc": "./features-icons/check-line.svg",
+                        "iconAlt": "Check icon",
+                        "description": "Dedicated customer support line"
+                    },
+                    {
+                        "iconSvgSrc": "./features-icons/check-line.svg",
+                        "iconAlt": "Check icon",
+                        "description": "24/7 support response time"
+                    },
+                    {
+                        "iconSvgSrc": "./features-icons/check-line.svg",
+                        "iconAlt": "Check icon",
+                        "description": "Advanced analytics and insights"
+                    }
+                ],
+                "isFeatured": false
+            }
+        ]
     }
 }

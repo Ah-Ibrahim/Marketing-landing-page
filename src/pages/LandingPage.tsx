@@ -6,6 +6,7 @@ import MainFeaturesShowcase from '../components/MainFeatures';
 import Showcase from '../components/Showcase';
 
 import { mapLandingPageData } from '../mappers/mapLandingPageData';
+import Pricing from '../components/Pricing';
 
 function LandingPage() {
     const {
@@ -13,6 +14,7 @@ function LandingPage() {
         mainFeaturesShowcaseData,
         designShowcaseData,
         supportShowcaseData,
+        pricingSectionData,
     } = mapLandingPageData();
 
     return (
@@ -24,6 +26,7 @@ function LandingPage() {
                 <MainFeaturesShowcase {...mainFeaturesShowcaseData} />
                 <Showcase {...designShowcaseData} />
                 <Showcase {...supportShowcaseData} isLayoutReversed />
+                <Pricing {...pricingSectionData} />
             </PageDetails>
         </div>
     );

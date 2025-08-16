@@ -114,32 +114,47 @@
 
     .btn {
         --btn-background-color: #fff;
-        --btn-color: #000;
+        --btn-text-color: #000;
+        --btn-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 
         background-color: var(--btn-background-color);
-        color: var(--btn-color);
-        box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+        color: var(--btn-text-color);
+        box-shadow: var(--btn-shadow);
         display: grid;
         place-content: center;
         border-radius: 5px;
         transition: background-color 0.35s;
+        cursor: pointer;
 
-        &:hover, &:focus {
+        :is(&:hover, &:active):not(:disabled) {
             --btn-background-color: hsl(0, 0%, 96%);
         }
     }
 
     .btn--primary {
         --btn-background-color: #4438ca;
-        --btn-color: #fff;
+        --btn-text-color: #fff;
 
-        &:hover, &:focus {
+        :is(&:hover, &:active):not(:disabled) {
             --btn-background-color: #352c98;
         }
     }
 
+    .btn:disabled {
+        --btn-text-color: var(--color-disabled);
+        --btn-shadow: none;
+
+        cursor: not-allowed;
+    }
+
     .icon-menu {
         width: 20px;
+    }
+
+    .icon {
+        aspect-ratio: 1;
+        display: grid;
+        place-items: center;
     }
 
     /* .inside-shadow::after, .inside-shadow::before {

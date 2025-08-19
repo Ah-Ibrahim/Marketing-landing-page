@@ -14,5 +14,6 @@ export function mapLandingPageData() {
         designShowcaseData: data.designShowcase,
         supportShowcaseData: data.supportShowcase,
         pricingSectionData: data.pricingSection,
+        FAQSectionData: data.FAQSection,
     };
 }

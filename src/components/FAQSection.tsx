@@ -4,8 +4,7 @@ import FAQCard from './FAQCard';
 type FAQSectionProps = FAQSectionType;
 
 function FAQSection({ mainTitle, mainDescription, FAQs }: FAQSectionProps) {
-    // TODO: using index is a bad practice, need to use unique ids
-    const cards = FAQs.map((FAQ, index) => <FAQCard key={index} {...FAQ} />);
+    const cards = FAQs.map((FAQ) => <FAQCard key={FAQ.id} {...FAQ} />);
 
     return (
         <section className="mt-16 max-w-(--max-width-content) px-(--content-padding-side)">

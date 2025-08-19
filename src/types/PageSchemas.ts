@@ -1,18 +1,23 @@
 import z from 'zod';
 import { PricingRecordSchema } from './PricingSchemas';
+import { nanoid } from 'nanoid';
 
 const IconSrcArraySchema = z.array(
-    z.object({
-        src: z.string(),
-    }),
+    z
+        .object({
+            src: z.string(),
+        })
+        .transform((srcObj) => ({ ...srcObj, id: nanoid() })),
 );
 
-const FeatureSchema = z.object({
-    iconSvgSrc: z.string(),
-    iconAlt: z.string(),
-    title: z.string().optional(),
-    description: z.string(),
-});
+const FeatureSchema = z
+    .object({
+        iconSvgSrc: z.string(),
+        iconAlt: z.string(),
+        title: z.string().optional(),
+        description: z.string(),
+    })
+    .transform((feature) => ({ ...feature, id: nanoid() }));
 
 const SectionSchema = z.object({
     opener: z.string().optional(),
@@ -26,13 +31,15 @@ const ShowcaseSchema = SectionSchema.extend({
     features: z.array(FeatureSchema),
 });
 
-const PlanSchema = z.object({
-    title: z.string(),
-    description: z.string(),
-    features: z.array(FeatureSchema),
-    pricing: PricingRecordSchema,
-    isFeatured: z.boolean(),
-});
+const PlanSchema = z
+    .object({
+        title: z.string(),
+        description: z.string(),
+        features: z.array(FeatureSchema),
+        pricing: PricingRecordSchema,
+        isFeatured: z.boolean(),
+    })
+    .transform((plan) => ({ ...plan, id: nanoid() }));
 
 const PricingSectionSchema = SectionSchema.extend({
     plans: z.array(PlanSchema),
@@ -40,13 +47,14 @@ const PricingSectionSchema = SectionSchema.extend({
 
 // NOTE: is there a better way to handle svg?
 
-const FAQSchema = FeatureSchema.pick({
-    iconAlt: true,
-    iconSvgSrc: true,
-}).extend({
-    question: z.string(),
-    answer: z.string(),
-});
+const FAQSchema = z
+    .object({
+        question: z.string(),
+        answer: z.string(),
+        iconSvgSrc: z.string(),
+        iconAlt: z.string(),
+    })
+    .transform((FAQ) => ({ ...FAQ, id: nanoid() }));
 
 const FAQSectionSchema = SectionSchema.extend({
     FAQs: z.array(FAQSchema),

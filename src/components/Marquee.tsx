@@ -7,7 +7,7 @@ interface MarqueeProps {
 function Marquee({ teamsLogoSrc }: MarqueeProps) {
     const items = teamsLogoSrc.map((srcObj, index) => (
         <img
-            key={`logo-${index}`}
+            key={srcObj.id}
             src={srcObj.src}
             alt={`Company's logo ${index + 1}`}
             className="shrink-0"

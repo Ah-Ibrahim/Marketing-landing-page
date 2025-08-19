@@ -6,8 +6,8 @@ function MainFeaturesShowcase({
     mainDescription,
     features,
 }: ShowcaseType) {
-    const items = features.map((feature, index) => (
-        <div className="py-3.75 text-center" key={index}>
+    const items = features.map((feature) => (
+        <div className="py-3.75 text-center" key={feature.id}>
             <img
                 className="feature-icon mx-auto mb-5"
                 src={feature.iconSvgSrc}

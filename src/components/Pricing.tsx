@@ -13,8 +13,12 @@ function Pricing({ opener, mainDescription, mainTitle, plans }: PricingProps) {
         setSelectedPricingType(type);
     };
 
-    const cards = plans.map((plan, index) => (
-        <PricingCard key={index} {...plan} pricingType={selectedPricingType} />
+    const cards = plans.map((plan) => (
+        <PricingCard
+            key={plan.id}
+            {...plan}
+            pricingType={selectedPricingType}
+        />
     ));
 
     return (

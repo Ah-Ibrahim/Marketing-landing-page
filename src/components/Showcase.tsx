@@ -13,8 +13,8 @@ function Showcase({
     features,
     isLayoutReversed = false,
 }: ShowcaseProps) {
-    const items = features.map((feature, index) => (
-        <div className="flex flex-row items-start gap-x-4" key={index}>
+    const items = features.map((feature) => (
+        <div className="flex flex-row items-start gap-x-4" key={feature.id}>
             <img
                 className="feature-icon mb-5"
                 src={feature.iconSvgSrc}

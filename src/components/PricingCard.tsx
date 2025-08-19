@@ -19,8 +19,8 @@ function PricingCard({
     const cost = `${pricingType === 'monthly' ? mapCost(pricing.monthly, currencySymbol) : mapCost(pricing.annually, currencySymbol)}`;
     const perPeriod = pricingType.slice(0, -2);
 
-    const items = features.map((feature, index) => (
-        <div key={index} className="flex flex-row items-center gap-x-2">
+    const items = features.map((feature) => (
+        <div key={feature.id} className="flex flex-row items-center gap-x-2">
             <div className="icon bg-icon-brand-background w-6.25 shrink-0 rounded-full">
                 <img
                     src={feature.iconSvgSrc}

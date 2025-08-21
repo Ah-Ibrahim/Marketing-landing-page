@@ -19,10 +19,11 @@ function Marquee({ teamsLogoSrc }: MarqueeProps) {
             <div className="text-primary text-center">
                 Used by teams that you love
             </div>
-
-            <div className="marquee animate-marquee flex w-[max-content] gap-(--marquee-spacing) ps-(--marquee-spacing) hover:[animation-play-state:paused]">
-                {items}
-                {items} {/* Items duplicated for animation */}
+            <div className="inside-shadow">
+                <div className="marquee animate-marquee flex w-[max-content] gap-(--marquee-spacing) ps-(--marquee-spacing) hover:[animation-play-state:paused]">
+                    {items}
+                    {items} {/* Items duplicated for animation */}
+                </div>
             </div>
         </section>
     );

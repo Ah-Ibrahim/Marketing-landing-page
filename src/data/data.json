@@ -273,5 +273,27 @@
                 "iconAlt": "Minimize icon"
             }
         ]
+    },
+    "NewsletterSection": {
+        "mainTitle": "Get the finest curated abstracts delivered weekly to your inbox",
+        "imgSrc": "./images/newsletter.jpg",
+        "imgAlt": "Abstract image",
+        "features": [
+            {
+                "iconSvgSrc": "./features-icons/check-line.svg",
+                "iconAlt": "Check icon",
+                "description": "Exclusive access to new abstract images and collections"
+            },
+            {
+                "iconSvgSrc": "./features-icons/check-line.svg",
+                "iconAlt": "Check icon",
+                "description": "Unlock special promotions only for subscribers"
+            },
+            {
+                "iconSvgSrc": "./features-icons/check-line.svg",
+                "iconAlt": "Check icon",
+                "description": "Regular doses of artistic inspiration"
+            }
+        ]
     }
 }

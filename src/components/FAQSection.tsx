@@ -7,7 +7,7 @@ function FAQSection({ mainTitle, mainDescription, FAQs }: FAQSectionProps) {
     const cards = FAQs.map((FAQ) => <FAQCard key={FAQ.id} {...FAQ} />);
 
     return (
-        <section className="mt-16 max-w-(--max-width-content) px-(--content-padding-side)">
+        <section className="mt-16 mb-19 max-w-(--max-width-content) px-(--content-padding-side)">
             <div className="mb-5 text-center">
                 <h2 className="mb-5 text-3xl font-bold">{mainTitle}</h2>
                 <p className="text-primary text-lg">{mainDescription}</p>

@@ -31,6 +31,8 @@ const ShowcaseSchema = SectionSchema.extend({
     features: z.array(FeatureSchema),
 });
 
+const SubscriptionSchema = ShowcaseSchema.omit({ mainDescription: true });
+
 const PlanSchema = z
     .object({
         title: z.string(),
@@ -67,6 +69,7 @@ export const LandingPageJSONSchema = z.object({
     supportShowcase: ShowcaseSchema,
     pricingSection: PricingSectionSchema,
     FAQSection: FAQSectionSchema,
+    NewsletterSection: SubscriptionSchema,
 });
 
 // Types
@@ -77,4 +80,5 @@ export type PlanType = z.infer<typeof PlanSchema>;
 export type PricingSectionType = z.infer<typeof PricingSectionSchema>;
 export type FAQType = z.infer<typeof FAQSchema>;
 export type FAQSectionType = z.infer<typeof FAQSectionSchema>;
+export type SubscriptionType = z.infer<typeof SubscriptionSchema>;
 export type LandingPageJSONType = z.infer<typeof LandingPageJSONSchema>;

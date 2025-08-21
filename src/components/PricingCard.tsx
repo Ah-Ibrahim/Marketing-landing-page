@@ -1,7 +1,7 @@
+import mapCost from '../mappers/mapCost';
+import { currencySymbolMapper } from '../types/CurrencySchemas';
 import type { PlanType } from '../types/PageSchemas';
 import type { PricingType } from '../types/PricingSchemas';
-import { currencySymbolMapper } from '../types/CurrencySchemas';
-import mapCost from '../mappers/mapCost';
 
 type PricingCardProps = PlanType & {
     pricingType: PricingType;

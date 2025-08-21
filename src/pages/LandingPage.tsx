@@ -1,14 +1,13 @@
-import NavBar from '../components/NavBar';
-import PageDetails from '../components/PageDetails';
-import HeroSection from '../components/HeroSection';
-import Marquee from '../components/Marquee';
-import MainFeaturesShowcase from '../components/MainFeatures';
-import Showcase from '../components/Showcase';
-
-import { mapLandingPageData } from '../mappers/mapLandingPageData';
-import Pricing from '../components/Pricing';
 import FAQSection from '../components/FAQSection';
+import HeroSection from '../components/HeroSection';
+import MainFeaturesShowcase from '../components/MainFeatures';
+import Marquee from '../components/Marquee';
+import NavBar from '../components/NavBar';
 import Newsletter from '../components/Newsletter';
+import PageDetails from '../components/PageDetails';
+import Pricing from '../components/Pricing';
+import Showcase from '../components/Showcase';
+import { mapLandingPageData } from '../mappers/mapLandingPageData';
 
 function LandingPage() {
     const {

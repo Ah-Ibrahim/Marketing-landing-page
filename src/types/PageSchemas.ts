@@ -1,6 +1,6 @@
+import { nanoid } from 'nanoid';
 import z from 'zod';
 import { PricingRecordSchema } from './PricingSchemas';
-import { nanoid } from 'nanoid';
 
 const IconSrcArraySchema = z.array(
     z

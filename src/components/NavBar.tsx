@@ -1,8 +1,8 @@
-import logoSrc from '../assets/images/abstractly.png';
-import SideMenu from './SideMenu';
-import { useState } from 'react';
-import useMediaQuery from '../hooks/useMediaQuery';
 import { AnimatePresence } from 'motion/react';
+import { useState } from 'react';
+import logoSrc from '../assets/images/abstractly.png';
+import useMediaQuery from '../hooks/useMediaQuery';
+import SideMenu from './SideMenu';
 
 function NavBar() {
     const [isMenuShown, setIsMenuShown] = useState<boolean>(false);

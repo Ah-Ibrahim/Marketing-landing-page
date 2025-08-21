@@ -1,6 +1,6 @@
+import { AnimatePresence, motion } from 'motion/react';
 import { useState } from 'react';
 import type { FAQType } from '../types/PageSchemas';
-import { AnimatePresence, motion } from 'motion/react';
 
 type FAQCardProps = FAQType;
 

@@ -1,6 +1,6 @@
+import { useState } from 'react';
 import type { PricingSectionType } from '../types/PageSchemas';
 import type { PricingType } from '../types/PricingSchemas';
-import { useState } from 'react';
 import PricingCard from './PricingCard';
 
 type PricingProps = PricingSectionType;

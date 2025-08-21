@@ -22,7 +22,7 @@ function Pricing({ opener, mainDescription, mainTitle, plans }: PricingProps) {
     ));
 
     return (
-        <section className="my-6.5 max-w-(--max-width-content) px-(--content-padding-side)">
+        <section className="my-6.5 section">
             <div className="mb-9.5 text-center">
                 <div className="text-brand text-md mb-3 tracking-wide">
                     {opener}

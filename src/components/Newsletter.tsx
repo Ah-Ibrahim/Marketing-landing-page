@@ -17,7 +17,7 @@ function Newsletter({ mainTitle, imgSrc, imgAlt, features }: NewsletterProps) {
     ));
 
     return (
-        <section className="flex max-w-(--max-width-content) flex-col gap-y-4 px-(--content-padding-side)">
+        <section className="flex section flex-col gap-y-4">
             <div>
                 <div>
                     <h2 className="mb-8.5 text-3xl font-semibold">

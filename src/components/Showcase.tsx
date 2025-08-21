@@ -28,7 +28,7 @@ function Showcase({
     ));
 
     return (
-        <section className="my-14 max-w-(--max-width-content) px-(--content-padding-side)">
+        <section className="my-14 section">
             <div className="mb-11 text-center">
                 <div className="text-brand text-md mb-3 tracking-wide">
                     {opener}

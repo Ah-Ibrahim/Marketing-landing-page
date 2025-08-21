@@ -112,6 +112,12 @@
         }
     }
 
+    .section {
+        max-width: var(--max-width-content);
+        padding-inline: var(--content-padding-side);
+        width: 100%;
+    }
+
     .btn {
         --btn-background-color: #fff;
         --btn-text-color: #000;

@@ -295,5 +295,26 @@
                 "description": "Regular doses of artistic inspiration"
             }
         ]
+    },
+    "contactSection": {
+        "mainTitle": "Talk to our team",
+        "mainDescription": "We're committed to delivering the support you require to make your experience as smooth as possible.",
+        "infos": [
+            {
+                "iconSvgSrc": "./info-icons/building-line.svg",
+                "iconAlt": "Address icon",
+                "infoDetails": "123 Maple Street, Springfield, IL, USA"
+            },
+            {
+                "iconSvgSrc": "./info-icons/phone-line.svg",
+                "iconAlt": "Phone icon",
+                "infoDetails": "+1 (650) 555-0198"
+            },
+            {
+                "iconSvgSrc": "./info-icons/mail-line.svg",
+                "iconAlt": "mail icon",
+                "infoDetails": "hello@abstractly.com"
+            }
+        ]
     }
 }

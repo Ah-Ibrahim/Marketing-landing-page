@@ -95,6 +95,8 @@
 }
 
 @layer components {
+
+    /* TODO: Refactor component styles*/
     .page-layout {
         --max-width-content: 100%;
         --content-padding-side: 1rem;

@@ -62,6 +62,20 @@ const FAQSectionSchema = SectionSchema.extend({
     FAQs: z.array(FAQSchema),
 });
 
+// TODO Refactor: Add an icon schema
+
+const InfoSchema = z
+    .object({
+        iconSvgSrc: z.string(),
+        iconAlt: z.string(),
+        infoDetails: z.string(),
+    })
+    .transform((info) => ({ ...info, id: nanoid() }));
+
+const ContactSectionSchema = SectionSchema.extend({
+    infos: z.array(InfoSchema),
+});
+
 export const LandingPageJSONSchema = z.object({
     teamsLogoSrc: IconSrcArraySchema,
     mainFeaturesShowcase: ShowcaseSchema,
@@ -70,6 +84,7 @@ export const LandingPageJSONSchema = z.object({
     pricingSection: PricingSectionSchema,
     FAQSection: FAQSectionSchema,
     NewsletterSection: SubscriptionSchema,
+    contactSection: ContactSectionSchema,
 });
 
 // Types
@@ -81,4 +96,5 @@ export type PricingSectionType = z.infer<typeof PricingSectionSchema>;
 export type FAQType = z.infer<typeof FAQSchema>;
 export type FAQSectionType = z.infer<typeof FAQSectionSchema>;
 export type SubscriptionType = z.infer<typeof SubscriptionSchema>;
+export type ContactSectionType = z.infer<typeof ContactSectionSchema>;
 export type LandingPageJSONType = z.infer<typeof LandingPageJSONSchema>;

@@ -16,5 +16,6 @@ export function mapLandingPageData() {
         pricingSectionData: data.pricingSection,
         FAQSectionData: data.FAQSection,
         newsletterSectionData: data.NewsletterSection,
+        contactSectionData: data.contactSection,
     };
 }

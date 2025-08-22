@@ -17,7 +17,7 @@ function Newsletter({ mainTitle, imgSrc, imgAlt, features }: NewsletterProps) {
     ));
 
     return (
-        <section className="flex section flex-col gap-y-4">
+        <section className="flex section flex-col gap-y-4 mb-22.5">
             <div>
                 <div>
                     <h2 className="mb-8.5 text-3xl font-semibold">
@@ -36,7 +36,6 @@ function Newsletter({ mainTitle, imgSrc, imgAlt, features }: NewsletterProps) {
                         className="bg-form-background border-form-border focus:border-brand caret-brand rounded-sm border-2 p-2 text-sm outline-0"
                         type="email"
                         name="userEmail"
-                        id="userEmail"
                         placeholder="Enter your email"
                     />
                     <div className="text-primary">

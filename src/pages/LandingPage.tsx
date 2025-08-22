@@ -1,3 +1,4 @@
+import ContactSection from '../components/ContactSection';
 import FAQSection from '../components/FAQSection';
 import HeroSection from '../components/HeroSection';
 import MainFeaturesShowcase from '../components/MainFeatures';
@@ -18,8 +19,10 @@ function LandingPage() {
         pricingSectionData,
         FAQSectionData,
         newsletterSectionData,
+        contactSectionData,
     } = mapLandingPageData();
 
+    // TODO Refactor names
     return (
         <div className="bg-bg-secondary page-layout p-4">
             <NavBar />
@@ -32,6 +35,7 @@ function LandingPage() {
                 <Pricing {...pricingSectionData} />
                 <FAQSection {...FAQSectionData} />
                 <Newsletter {...newsletterSectionData} />
+                <ContactSection {...contactSectionData} />
             </PageDetails>
         </div>
     );

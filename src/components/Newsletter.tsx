@@ -37,6 +37,7 @@ function Newsletter({ mainTitle, imgSrc, imgAlt, features }: NewsletterProps) {
                         type="email"
                         name="userEmail"
                         placeholder="Enter your email"
+                        required
                     />
                     <div className="text-primary">
                         We only send you the best! No spam.

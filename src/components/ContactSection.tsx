@@ -9,7 +9,6 @@ function ContactSection({
     mainDescription,
     infos,
 }: ContactSectionProps) {
-    // TODO Add form error handling and success message
     const [message, setMessage] = useState<string>('');
 
     const items = infos.map((info) => (
@@ -52,6 +51,7 @@ function ContactSection({
                     name="userName"
                     placeholder="Your name"
                     className="bg-form-background border rounded-sm p-2 border-form-border mb-6 outline-line-brand-solid placeholder:text-form-text-placeholder"
+                    required
                 />
                 <label
                     htmlFor="userEmail"
@@ -65,6 +65,7 @@ function ContactSection({
                     name="userEmail"
                     placeholder="example@example.com"
                     className="bg-form-background border rounded-sm p-2 border-form-border mb-6 outline-line-brand-solid"
+                    required
                 />
                 <label
                     htmlFor="userMessage"
@@ -79,6 +80,7 @@ function ContactSection({
                     value={message}
                     onChange={handleTextareaChange}
                     className="bg-form-background border rounded-sm p-2 border-form-border mb-2 resize-none outline-line-brand-solid h-26"
+                    required
                 />
                 <div className="mb-10 justify-self-end text-form-text-hint">
                     {message.length}/{MAX_CHAR_NUM}

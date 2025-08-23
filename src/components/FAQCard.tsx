@@ -30,8 +30,8 @@ function FAQCard({ question, answer, iconSvgSrc, iconAlt }: FAQCardProps) {
                         animate={{
                             height: 'max-content',
                             transition: {
-                                duration: 0.5,
-                                ease: 'backOut',
+                                duration: 1,
+                                ease: 'backInOut',
                             },
                         }}
                         exit={{

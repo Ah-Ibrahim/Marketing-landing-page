@@ -10,7 +10,7 @@ function SideMenu({ onClose }: SideMenuProps) {
     return (
         <div className="fixed inset-0 z-[1] bg-black/25" onClick={onClose}>
             <motion.div
-                className="bg-bg-primary absolute top-0 right-0 bottom-0 flex w-3/4 flex-col p-6 pr-[calc(5%+calc(var(--spacing)*6))]"
+                className="bg-bg-primary absolute top-0 right-0 bottom-0 flex w-3/4 md:w-1/2 flex-col p-6 pr-[calc(5%+calc(var(--spacing)*6))]"
                 onClick={(e) => e.stopPropagation()}
                 initial={{
                     right: '-100%',

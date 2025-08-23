@@ -9,7 +9,9 @@ function FAQSection({ mainTitle, mainDescription, FAQs }: FAQSectionProps) {
     return (
         <section className="mt-16 mb-19 section">
             <div className="mb-5 text-center">
-                <h2 className="mb-5 text-3xl font-bold">{mainTitle}</h2>
+                <h2 className="mb-5 text-3xl font-bold md:text-4xl">
+                    {mainTitle}
+                </h2>
                 <p className="text-primary text-lg">{mainDescription}</p>
             </div>
             <div className="mb-5">{cards}</div>

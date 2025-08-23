@@ -24,10 +24,12 @@ function MainFeaturesShowcase({
                 <div className="text-brand text-md mb-3 tracking-wide">
                     {opener}
                 </div>
-                <h2 className="mb-6 text-3xl font-bold">{mainTitle}</h2>
+                <h2 className="mb-6 text-3xl font-bold md:text-4xl">
+                    {mainTitle}
+                </h2>
                 <p className="text-primary text-lg">{mainDescription} </p>
             </div>
-            <div className="grid">{items}</div>
+            <div className="grid md:grid-cols-2 md:gap-8">{items}</div>
         </section>
     );
 }

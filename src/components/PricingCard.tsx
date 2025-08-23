@@ -41,7 +41,7 @@ function PricingCard({
                     Most Popular
                 </div>
             )}
-            <div className="px-3 py-4">
+            <div className="px-3 py-4 md:px-6 md:py-8">
                 <h3 className="mb-2 text-2xl font-semibold">{title}</h3>
                 <p className="text-primary mb-8">{description}</p>
                 <div className={`my-2 ${isFeatured && 'text-brand'}`}>

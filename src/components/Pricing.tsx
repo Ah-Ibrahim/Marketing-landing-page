@@ -27,7 +27,9 @@ function Pricing({ opener, mainDescription, mainTitle, plans }: PricingProps) {
                 <div className="text-brand text-md mb-3 tracking-wide">
                     {opener}
                 </div>
-                <h2 className="mb-6 text-3xl font-bold">{mainTitle}</h2>
+                <h2 className="mb-6 text-3xl font-bold md:text-4xl">
+                    {mainTitle}
+                </h2>
                 <p className="text-primary text-lg">{mainDescription}</p>
             </div>
             <div className="mb-12 grid grid-cols-2 gap-x-4">

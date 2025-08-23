@@ -33,7 +33,9 @@ function ContactSection({
 
     return (
         <section className="section mb-12">
-            <h2 className="text-4xl font-semibold mb-6">{mainTitle}</h2>
+            <h2 className="text-3xl font-semibold mb-6 md:text-4xl">
+                {mainTitle}
+            </h2>
             <p className="text-primary text-lg mb-9">{mainDescription}</p>
             <div className="space-y-5 mb-12">{items}</div>
             <form

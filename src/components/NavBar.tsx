@@ -13,7 +13,7 @@ function NavBar() {
     const closeMenu = () => setIsMenuShown(false);
 
     return (
-        <nav className="m-auto flex max-w-(--max-width-content) items-center justify-between bg-transparent py-4">
+        <nav className="m-auto flex section items-center justify-between bg-transparent py-4 ">
             <div className="w-31">
                 <img src={logoSrc} alt="Logo Image" />
             </div>

@@ -20,7 +20,7 @@ function Newsletter({ mainTitle, imgSrc, imgAlt, features }: NewsletterProps) {
         <section className="flex section flex-col gap-y-4 mb-22.5">
             <div>
                 <div>
-                    <h2 className="mb-8.5 text-3xl font-semibold">
+                    <h2 className="mb-8.5 text-3xl font-semibold md:text-4xl">
                         {mainTitle}
                     </h2>
                 </div>

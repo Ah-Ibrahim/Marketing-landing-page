@@ -1,5 +1,6 @@
 import ContactSection from '../components/ContactSection';
 import FAQSection from '../components/FAQSection';
+import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection';
 import MainFeaturesShowcase from '../components/MainFeatures';
 import Marquee from '../components/Marquee';
@@ -37,6 +38,7 @@ function LandingPage() {
                 <Newsletter {...newsletterSectionData} />
                 <ContactSection {...contactSectionData} />
             </PageDetails>
+            <Footer />
         </div>
     );
 }

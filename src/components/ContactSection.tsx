@@ -32,7 +32,7 @@ function ContactSection({
     };
 
     return (
-        <section className="section">
+        <section className="section mb-12">
             <h2 className="text-4xl font-semibold mb-6">{mainTitle}</h2>
             <p className="text-primary text-lg mb-9">{mainDescription}</p>
             <div className="space-y-5 mb-12">{items}</div>

@@ -1,3 +1,5 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import useMediaQuery from '../hooks/useMediaQuery';
 import type { ShowcaseType } from '../types/PageSchemas';
 
@@ -59,10 +61,11 @@ function Showcase({
             <div className={`flex ${flexStyle} gap-y-11 lg:gap-x-8`}>
                 <div className="grid gap-9">{items}</div>
                 <div className="aspect-[5/3] w-full rounded-lg overflow-hidden">
-                    <img
+                    <LazyLoadImage
                         className="h-full w-full object-cover"
                         src={imgSrc}
                         alt={imgAlt}
+                        effect="blur"
                     />
                 </div>
             </div>

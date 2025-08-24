@@ -1,3 +1,5 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import type { SubscriptionType } from '../types/PageSchemas';
 
 type NewsletterProps = SubscriptionType;
@@ -48,7 +50,7 @@ function Newsletter({ mainTitle, imgSrc, imgAlt, features }: NewsletterProps) {
                 </form>
             </div>
             <div className="aspect-[9/8] overflow-hidden rounded-lg lg:col-span-6">
-                <img
+                <LazyLoadImage
                     src={imgSrc}
                     alt={imgAlt}
                     className="h-full w-full object-cover"

@@ -48,7 +48,7 @@ function Pricing({ opener, mainDescription, mainTitle, plans }: PricingProps) {
                     Annually
                 </button>
             </div>
-            <div className="not:lg:space-y-7.5 lg:grid lg:grid-cols-3 lg:gap-x-8">
+            <div className="max-md:space-y-7.5 lg:grid lg:grid-cols-3 lg:gap-x-8">
                 {cards}
             </div>
         </section>

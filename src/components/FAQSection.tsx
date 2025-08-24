@@ -7,7 +7,7 @@ function FAQSection({ mainTitle, mainDescription, FAQs }: FAQSectionProps) {
     const cards = FAQs.map((FAQ) => <FAQCard key={FAQ.id} {...FAQ} />);
 
     return (
-        <section className="mt-16 mb-19 section">
+        <section className="mt-16 mb-19 section lg:mb-30">
             <div className="mb-5 text-center">
                 <h2 className="mb-5 text-3xl font-bold md:text-4xl">
                     {mainTitle}
@@ -15,21 +15,23 @@ function FAQSection({ mainTitle, mainDescription, FAQs }: FAQSectionProps) {
                 <p className="text-primary text-lg">{mainDescription}</p>
             </div>
             <div className="mb-5">{cards}</div>
-            <div className="border-line-primary rounded-lg border px-3 py-5 shadow-xl">
-                <h3 className="mb-2 text-xl font-semibold">
-                    Can't find the answer you're looking for?
-                </h3>
-                <p className="text-primary mb-3">
-                    Reach out to our{' '}
-                    <a
-                        href="#"
-                        className="text-brand transition-colors hover:text-[color:#352c98]"
-                    >
-                        customer support
-                    </a>{' '}
-                    team.
-                </p>
-                <a href="#" className="btn btn--primary py-3">
+            <div className="border-line-primary rounded-lg border px-3 py-5 shadow-xl lg:flex lg:justify-between lg:items-center lg:p-8">
+                <div>
+                    <h3 className="mb-2 text-xl font-semibold">
+                        Can't find the answer you're looking for?
+                    </h3>
+                    <p className="text-primary mb-3">
+                        Reach out to our{' '}
+                        <a
+                            href="#"
+                            className="text-brand transition-colors hover:text-[color:#352c98]"
+                        >
+                            customer support
+                        </a>{' '}
+                        team.
+                    </p>
+                </div>
+                <a href="#" className="btn btn--primary py-3 lg:px-5">
                     Get in touch
                 </a>
             </div>

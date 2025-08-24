@@ -32,17 +32,19 @@ function ContactSection({
     };
 
     return (
-        <section className="section mb-12">
-            <h2 className="text-3xl font-semibold mb-6 md:text-4xl">
-                {mainTitle}
-            </h2>
-            <p className="text-primary text-lg mb-9">{mainDescription}</p>
-            <div className="space-y-5 mb-12">{items}</div>
+        <section className="section mb-12 lg:grid lg:grid-cols-12 lg:gap-x-8">
+            <div className="lg:col-span-6">
+                <h2 className="text-3xl font-semibold mb-6 md:text-4xl lg:text-5xl">
+                    {mainTitle}
+                </h2>
+                <p className="text-primary text-lg mb-9">{mainDescription}</p>
+                <div className="space-y-5 mb-12">{items}</div>
+            </div>
             <form
                 action=""
                 method="POST"
                 onSubmit={(e) => e.preventDefault()}
-                className="grid border-2 border-form-border rounded-lg p-4 text-sm shadow-lg"
+                className="grid border-2 border-form-border rounded-lg p-4 text-sm shadow-lg lg:col-span-6"
             >
                 <label htmlFor="userName" className="mb-2 text-form-text-title">
                     Name

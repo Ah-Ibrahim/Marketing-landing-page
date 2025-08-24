@@ -15,7 +15,7 @@ function Marquee({ teamsLogoSrc }: MarqueeProps) {
     ));
 
     return (
-        <section className="my-[6rem] w-full space-y-12 overflow-x-hidden">
+        <section className="mb-30.5 w-full space-y-12 overflow-x-hidden lg:mb-42.5">
             <div className="text-primary text-center">
                 Used by teams that you love
             </div>

@@ -34,14 +34,14 @@ function PricingCard({
 
     return (
         <div
-            className={`overflow-hidden rounded-lg border ${isFeatured ? 'border-line-brand-solid shadow-2xl' : 'border-line-primary shadow'}`}
+            className={`overflow-hidden rounded-lg border ${isFeatured ? 'border-line-brand-solid shadow-2xl' : 'border-line-primary shadow'} lg:flex lg:flex-col`}
         >
             {isFeatured && (
                 <div className="text-brand bg-bg-brand-subtle mb-4.5 py-3 text-center text-xl font-semibold">
                     Most Popular
                 </div>
             )}
-            <div className="px-3 py-4 md:px-6 md:py-8">
+            <div className="px-3 py-4 md:px-6 md:py-8 lg:flex lg:flex-col lg:grow-1">
                 <h3 className="mb-2 text-2xl font-semibold">{title}</h3>
                 <p className="text-primary mb-8">{description}</p>
                 <div className={`my-2 ${isFeatured && 'text-brand'}`}>
@@ -61,7 +61,7 @@ function PricingCard({
                 </div>
                 <div className="mb-7.5 grid gap-y-5">{items}</div>
                 <button
-                    className={`btn w-full py-3.5 font-medium ${isFeatured && 'btn--primary'}`}
+                    className={`btn w-full py-3.5 font-medium ${isFeatured && 'btn--primary'} lg:mt-auto`}
                 >
                     Buy now
                 </button>

@@ -107,8 +107,9 @@
             }
         }
 
-        @media (min-width: 1440px) {
+        @media (min-width: 1280px) {
             & {
+                --content-padding-side: 3rem;
                 --max-width-content: 80rem;
             }
         }

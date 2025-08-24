@@ -19,17 +19,19 @@ function MainFeaturesShowcase({
     ));
 
     return (
-        <section className="my-6.5 section">
+        <section className="mb-20.5 section lg:mb-28">
             <div className="mb-6.5 text-center">
                 <div className="text-brand text-md mb-3 tracking-wide">
                     {opener}
                 </div>
-                <h2 className="mb-6 text-3xl font-bold md:text-4xl">
+                <h2 className="mb-6 text-3xl font-bold md:text-4xl lg:text-5xl">
                     {mainTitle}
                 </h2>
                 <p className="text-primary text-lg">{mainDescription} </p>
             </div>
-            <div className="grid md:grid-cols-2 md:gap-8">{items}</div>
+            <div className="grid md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+                {items}
+            </div>
         </section>
     );
 }

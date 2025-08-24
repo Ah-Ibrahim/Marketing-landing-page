@@ -17,10 +17,10 @@ function Newsletter({ mainTitle, imgSrc, imgAlt, features }: NewsletterProps) {
     ));
 
     return (
-        <section className="flex section flex-col gap-y-4 mb-22.5">
-            <div>
+        <section className="flex section flex-col gap-y-4 mb-22.5 lg:grid lg:grid-cols-12 lg:gap-x-8 lg:mb-30">
+            <div className="lg:col-span-6">
                 <div>
-                    <h2 className="mb-8.5 text-3xl font-semibold md:text-4xl">
+                    <h2 className="mb-8.5 text-3xl font-semibold md:text-4xl lg:text-5xl">
                         {mainTitle}
                     </h2>
                 </div>
@@ -47,7 +47,7 @@ function Newsletter({ mainTitle, imgSrc, imgAlt, features }: NewsletterProps) {
                     </button>
                 </form>
             </div>
-            <div className="aspect-[9/8] overflow-hidden rounded-lg">
+            <div className="aspect-[9/8] overflow-hidden rounded-lg lg:col-span-6">
                 <img
                     src={imgSrc}
                     alt={imgAlt}

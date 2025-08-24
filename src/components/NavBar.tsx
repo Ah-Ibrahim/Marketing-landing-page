@@ -6,7 +6,7 @@ import SideMenu from './SideMenu';
 
 function NavBar() {
     const [isMenuShown, setIsMenuShown] = useState<boolean>(false);
-    const isDesktop = useMediaQuery('(min-width: 80rem)');
+    const isDesktop = useMediaQuery('(min-width: 64rem)');
 
     const handleMenuBtnClick = () => setIsMenuShown(true);
 

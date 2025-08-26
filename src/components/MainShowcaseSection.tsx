@@ -1,11 +1,13 @@
 import type { ShowcaseType } from '../types/PageSchemas';
 
-function MainFeaturesShowcase({
+type MainShowcaseSectionProps = ShowcaseType;
+
+function MainShowcaseSection({
     opener,
     mainTitle,
     mainDescription,
     features,
-}: ShowcaseType) {
+}: MainShowcaseSectionProps) {
     const items = features.map((feature) => (
         <div className="py-3.75 text-center" key={feature.id}>
             <img
@@ -35,4 +37,4 @@ function MainFeaturesShowcase({
         </section>
     );
 }
-export default MainFeaturesShowcase;
+export default MainShowcaseSection;

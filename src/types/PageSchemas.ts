@@ -78,12 +78,12 @@ const ContactSectionSchema = SectionSchema.extend({
 
 export const LandingPageJSONSchema = z.object({
     teamsLogoSrc: IconSrcArraySchema,
-    mainFeaturesShowcase: ShowcaseSchema,
+    mainShowcase: ShowcaseSchema,
     designShowcase: ShowcaseSchema,
     supportShowcase: ShowcaseSchema,
     pricingSection: PricingSectionSchema,
-    FAQSection: FAQSectionSchema,
-    NewsletterSection: SubscriptionSchema,
+    faqSection: FAQSectionSchema,
+    newsletterSection: SubscriptionSchema,
     contactSection: ContactSectionSchema,
 });
 

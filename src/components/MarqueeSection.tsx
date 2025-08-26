@@ -1,10 +1,10 @@
 import type { IconSrcArray } from '../types/PageSchemas';
 
-interface MarqueeProps {
+interface MarqueeSectionProps {
     teamsLogoSrc: IconSrcArray;
 }
 
-function Marquee({ teamsLogoSrc }: MarqueeProps) {
+function MarqueeSection({ teamsLogoSrc }: MarqueeSectionProps) {
     const items = teamsLogoSrc.map((srcObj, index) => (
         <img
             key={srcObj.id}
@@ -28,4 +28,4 @@ function Marquee({ teamsLogoSrc }: MarqueeProps) {
         </section>
     );
 }
-export default Marquee;
+export default MarqueeSection;

@@ -3,9 +3,14 @@ import type { PricingSectionType } from '../types/PageSchemas';
 import type { PricingType } from '../types/PricingSchemas';
 import PricingCard from './PricingCard';
 
-type PricingProps = PricingSectionType;
+type PricingSectionProps = PricingSectionType;
 
-function Pricing({ opener, mainDescription, mainTitle, plans }: PricingProps) {
+function PricingSection({
+    opener,
+    mainDescription,
+    mainTitle,
+    plans,
+}: PricingSectionProps) {
     const [selectedPricingType, setSelectedPricingType] =
         useState<PricingType>('monthly');
 
@@ -54,4 +59,4 @@ function Pricing({ opener, mainDescription, mainTitle, plans }: PricingProps) {
         </section>
     );
 }
-export default Pricing;
+export default PricingSection;

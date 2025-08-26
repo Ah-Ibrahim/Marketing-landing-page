@@ -22,7 +22,7 @@
             "src": "./team-logos/logoipsum-7.svg"
         }
     ],
-    "mainFeaturesShowcase": {
+    "mainShowcase": {
         "opener": "Premium abstract images",
         "mainTitle": "Easy access to top quality images",
         "mainDescription": "In a world where storytelling constantly evolves, we lead with groundbreaking images designed for your presentation excellence.",
@@ -232,7 +232,7 @@
             }
         ]
     },
-    "FAQSection": {
+    "faqSection": {
         "mainTitle": "Frequently asked questions",
         "mainDescription": "Choose any questions you need",
         "FAQs": [
@@ -274,7 +274,7 @@
             }
         ]
     },
-    "NewsletterSection": {
+    "newsletterSection": {
         "mainTitle": "Get the finest curated abstracts delivered weekly to your inbox",
         "imgSrc": "./images/newsletter.jpg",
         "imgAlt": "Abstract image",

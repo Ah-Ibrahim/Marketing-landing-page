@@ -1,10 +1,10 @@
 import type { ReactNode } from 'react';
 
-type PageDetailsProps = {
+type PageWrapperProps = {
     children: ReactNode;
 };
 
-function PageDetails({ children }: PageDetailsProps) {
+function PageWrapper({ children }: PageWrapperProps) {
     return (
         <main className="bg-bg-primary mt-4 grid justify-items-center rounded-md py-12 md:py-16">
             {children}
@@ -12,4 +12,4 @@ function PageDetails({ children }: PageDetailsProps) {
     );
 }
 
-export default PageDetails;
+export default PageWrapper;

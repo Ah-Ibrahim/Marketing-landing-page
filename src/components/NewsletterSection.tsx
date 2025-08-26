@@ -2,9 +2,14 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import type { SubscriptionType } from '../types/PageSchemas';
 
-type NewsletterProps = SubscriptionType;
+type NewsletterSectionProps = SubscriptionType;
 
-function Newsletter({ mainTitle, imgSrc, imgAlt, features }: NewsletterProps) {
+function NewsletterSection({
+    mainTitle,
+    imgSrc,
+    imgAlt,
+    features,
+}: NewsletterSectionProps) {
     const items = features.map((feature) => (
         <div key={feature.id} className="flex flex-row items-center gap-x-2">
             <div className="icon bg-icon-brand-background w-6.25 shrink-0 rounded-full">
@@ -59,4 +64,4 @@ function Newsletter({ mainTitle, imgSrc, imgAlt, features }: NewsletterProps) {
         </section>
     );
 }
-export default Newsletter;
+export default NewsletterSection;

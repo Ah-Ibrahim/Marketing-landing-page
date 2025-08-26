@@ -2,42 +2,41 @@ import ContactSection from '../components/ContactSection';
 import FAQSection from '../components/FAQSection';
 import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection';
-import MainFeaturesShowcase from '../components/MainFeatures';
-import Marquee from '../components/Marquee';
+import MainShowcaseSection from '../components/MainShowcaseSection';
+import MarqueeSection from '../components/MarqueeSection';
 import NavBar from '../components/NavBar';
-import Newsletter from '../components/Newsletter';
-import PageDetails from '../components/PageDetails';
-import Pricing from '../components/Pricing';
-import Showcase from '../components/Showcase';
+import NewsletterSection from '../components/NewsletterSection';
+import PageWrapper from '../components/PageWrapper';
+import PricingSection from '../components/PricingSection';
+import ShowcaseSection from '../components/ShowcaseSection';
 import { mapLandingPageData } from '../mappers/mapLandingPageData';
 
 function LandingPage() {
     const {
         marqueeData,
-        mainFeaturesShowcaseData,
+        mainShowcaseData,
         designShowcaseData,
         supportShowcaseData,
         pricingSectionData,
-        FAQSectionData,
+        faqSectionData,
         newsletterSectionData,
         contactSectionData,
     } = mapLandingPageData();
 
-    // TODO Refactor names
     return (
         <div className="bg-bg-secondary page-layout p-4">
             <NavBar />
-            <PageDetails>
+            <PageWrapper>
                 <HeroSection />
-                <Marquee teamsLogoSrc={marqueeData} />
-                <MainFeaturesShowcase {...mainFeaturesShowcaseData} />
-                <Showcase {...designShowcaseData} />
-                <Showcase {...supportShowcaseData} isLayoutReversed />
-                <Pricing {...pricingSectionData} />
-                <FAQSection {...FAQSectionData} />
-                <Newsletter {...newsletterSectionData} />
+                <MarqueeSection teamsLogoSrc={marqueeData} />
+                <MainShowcaseSection {...mainShowcaseData} />
+                <ShowcaseSection {...designShowcaseData} />
+                <ShowcaseSection {...supportShowcaseData} isLayoutReversed />
+                <PricingSection {...pricingSectionData} />
+                <FAQSection {...faqSectionData} />
+                <NewsletterSection {...newsletterSectionData} />
                 <ContactSection {...contactSectionData} />
-            </PageDetails>
+            </PageWrapper>
             <Footer />
         </div>
     );

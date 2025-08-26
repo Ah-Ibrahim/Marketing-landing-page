@@ -3,11 +3,11 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import useMediaQuery from '../hooks/useMediaQuery';
 import type { ShowcaseType } from '../types/PageSchemas';
 
-interface ShowcaseProps extends ShowcaseType {
+interface ShowcaseSectionProps extends ShowcaseType {
     isLayoutReversed?: boolean;
 }
 
-function Showcase({
+function ShowcaseSection({
     opener,
     mainTitle,
     mainDescription,
@@ -15,7 +15,7 @@ function Showcase({
     imgAlt,
     features,
     isLayoutReversed = false,
-}: ShowcaseProps) {
+}: ShowcaseSectionProps) {
     const isDesktop = useMediaQuery('(min-width: 80rem)');
 
     const items = features.map((feature) => (
@@ -72,4 +72,4 @@ function Showcase({
         </section>
     );
 }
-export default Showcase;
+export default ShowcaseSection;

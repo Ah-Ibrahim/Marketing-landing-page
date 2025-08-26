@@ -10,12 +10,12 @@ export function mapLandingPageData() {
 
     return {
         marqueeData: data.teamsLogoSrc,
-        mainFeaturesShowcaseData: data.mainFeaturesShowcase,
+        mainShowcaseData: data.mainShowcase,
         designShowcaseData: data.designShowcase,
         supportShowcaseData: data.supportShowcase,
         pricingSectionData: data.pricingSection,
-        FAQSectionData: data.FAQSection,
-        newsletterSectionData: data.NewsletterSection,
+        faqSectionData: data.faqSection,
+        newsletterSectionData: data.newsletterSection,
         contactSectionData: data.contactSection,
     };
 }

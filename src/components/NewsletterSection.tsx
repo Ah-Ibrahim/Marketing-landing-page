@@ -59,6 +59,7 @@ function NewsletterSection({
                     src={imgSrc}
                     alt={imgAlt}
                     className="h-full w-full object-cover"
+                    effect="blur"
                 />
             </div>
         </section>

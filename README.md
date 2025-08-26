@@ -1,4 +1,4 @@
-# 👟 Marketing Landing Page (React + TypeScript)
+# 🟪 Marketing Landing Page (React + TypeScript)
 
 _A sleek and responsive marketing landing page built with **React + TypeScript**, styled with **TailwindCSS**, animated with **Motion**, and validated with **Zod** for runtime safety._
 

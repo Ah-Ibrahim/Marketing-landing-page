@@ -1,4 +1,4 @@
-# 👟 Marketing Landing Page (React + TypeScript)
+# 🟪 Marketing Landing Page (React + TypeScript)
 
 _A sleek and responsive marketing landing page built with **React + TypeScript**, styled with **TailwindCSS**, animated with **Motion**, and validated with **Zod** for runtime safety._
 
@@ -80,7 +80,7 @@ Wanna run this locally? Follow these steps:
 1. Clone the repo
 
 ```bash
-git clone https://github.com/Ah-Ibrahim/Marketing-landing-page.git\
+git clone https://github.com/Ah-Ibrahim/Marketing-landing-page.git
 cd your-repo
 ```
 

@@ -60,7 +60,7 @@ function ShowcaseSection({
             </div>
             <div className={`flex ${flexStyle} gap-y-11 lg:gap-x-8`}>
                 <div className="grid gap-9">{items}</div>
-                <div className="aspect-[5/3] w-full rounded-lg overflow-hidden">
+                <div className="aspect-[5/3] w-full rounded-2xl overflow-hidden">
                     <LazyLoadImage
                         className="h-full w-full object-cover"
                         src={imgSrc}

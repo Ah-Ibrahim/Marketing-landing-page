@@ -54,7 +54,7 @@ function NewsletterSection({
                     </button>
                 </form>
             </div>
-            <div className="aspect-[9/8] overflow-hidden rounded-lg lg:col-span-6">
+            <div className="aspect-[9/8] overflow-hidden rounded-2xl lg:col-span-6">
                 <LazyLoadImage
                     src={imgSrc}
                     alt={imgAlt}

@@ -80,7 +80,7 @@ Wanna run this locally? Follow these steps:
 1. Clone the repo
 
 ```bash
-git clone https://github.com/Ah-Ibrahim/Marketing-landing-page.git\
+git clone https://github.com/Ah-Ibrahim/Marketing-landing-page.git
 cd your-repo
 ```
 

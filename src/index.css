@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Noto Sans';
-    src: url('./fonts/Noto_Sans/NotoSans-VariableFont_wdth,wght.ttf');
+    src: url('./assets/fonts/Noto_Sans/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
 }
 
 @theme {
